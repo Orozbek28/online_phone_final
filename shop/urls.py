@@ -11,7 +11,7 @@ from accounts.views import MyObtainAuthToken
 
 schema_view = get_schema_view(
    openapi.Info(
-      title="TwitterLike App Test API",
+      title="ONLINE SHOP PHONE",
       default_version='v0.0.1 super-puper beta',
       description="API documentation for TwitterLike App",
       contact=openapi.Contact(email="thisisnotspoon@gmail.com"),
