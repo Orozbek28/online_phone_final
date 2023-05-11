@@ -74,15 +74,4 @@ def order_detail(request, name):
         return Response(serializer.data)
     return Response(serializer.errors, status=400)
 
-#
-# class UserRegisterView(generics.CreateAPIView):
-#     queryset = User.objects.all()
-#     serializer_class = UserRegisterSerializer
-#
-#
-# def create(self, request, *args, **kwargs):
-#     serializer = self.get_serializer(data=request.data)
-#     serializer.is_valid(raise_exception=True)
-#     user = serializer.save()
-#     token, created = Token.objects.get_or_create(user=user)
-#     return Response({'token': token.key})
+

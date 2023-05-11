@@ -24,8 +24,7 @@ class Product(models.Model):
     image = models.ImageField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    # class Meta:
-    #     unique_together = ['user', 'category']
+
 
     def __str__(self):
         return self.name
